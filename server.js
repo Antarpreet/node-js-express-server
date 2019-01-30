@@ -21,6 +21,7 @@ app.use((req, res, next) => {
     res.render('maintenance.hbs', {
         pageTitle: "We'll be right back"
     });
+    next();
 });
 
 app.use(express.static(__dirname + '/public'));
